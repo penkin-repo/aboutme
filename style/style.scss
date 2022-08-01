@@ -4,7 +4,6 @@
 // общие
 // общие
 // общие
-// общие
 
 * {
   font-family: Roboto;
@@ -45,16 +44,147 @@ header {
 }
 
 .about {
-  .separador {
+  & h1 {
+    margin-top: 10px;
+  }
+  & .my-projects-link {
+    background: linear-gradient(222deg, #00ffbd, #0076ff);
+    background-size: 400% 400%;
+    // background-color: rgb(2, 183, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100px;
+    max-width: 130px;
+    min-height: 30px;
+    transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+    &:hover {
+      -webkit-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+      box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+
+      transform: scale(1.03);
+
+      -webkit-animation: AnimationName 5s ease infinite;
+      -moz-animation: AnimationName 5s ease infinite;
+      animation: AnimationName 5s ease infinite;
+    }
+    & a {
+      text-decoration: none;
+      padding-left: 15px;
+      padding-right: 15px;
+      color: rgb(255, 255, 255);
+    }
+  }
+  .separator {
     margin-top: 40px;
-    border-bottom: 2px solid rgb(13, 120, 252);
-    opacity: 0.7;
+    min-height: 3px;
+    // border-bottom: 2px solid rgb(13, 120, 252);
+    opacity: 1;
+    border-radius: 10px;
+
+    background: linear-gradient(222deg, #00ffbd, #0076ff);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+  }
+  & .about-body {
+    margin-top: 30px;
+    max-width: 600px;
+    opacity: 0.8;
+  }
+}
+
+.contacts-wrapper {
+  padding-top: 30px;
+  height: 100vh;
+  background: linear-gradient(222deg, #00ffbd, #0076ff);
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
 .contacts {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-bottom: 30px;
   & .contacts-main {
     width: 300px;
+    & .contacts-main-git-icon {
+      &::before {
+        font-family: FontAwesome;
+        content: "\f09b";
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    }
+    & .contacts-main-telegram-icon {
+      &::before {
+        font-family: FontAwesome;
+        content: "\f2c6";
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    }
+
+    & .contacts-main-mail-icon {
+      &::before {
+        font-family: FontAwesome;
+        content: "\f0e0";
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    }
+
+    & .contacts-main-vk-icon {
+      &::before {
+        font-family: FontAwesome;
+        content: "\f189";
+        margin-right: 10px;
+        text-decoration: none;
+      }
+    }
   }
   & .contacts-icon i {
     margin-top: 40px;
@@ -65,10 +195,11 @@ header {
     }
   }
   a {
-    text-decoration: underline;
+    text-decoration: none;
     color: rgb(13, 120, 252);
   }
   & h2 {
+    // text-decoration: underline;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     margin-top: 10px;
@@ -103,4 +234,28 @@ header {
     }
   }
 }
+
+.dark-penkin {
+  height: 100vh;
+  background: rgb(44, 44, 44);
+  padding-top: 40px;
+  & h1 {
+    color: white;
+    margin-top: 0;
+  }
+}
+
+.header-night {
+  min-height: 63px;
+  background: rgb(44, 44, 44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container-night {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 // -----------------------------

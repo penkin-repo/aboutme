@@ -31,14 +31,134 @@ header nav .navbar-brand img:hover {
   padding: 2px;
 }
 
-.about .separador {
+.about h1 {
+  margin-top: 10px;
+}
+
+.about .my-projects-link {
+  background: linear-gradient(222deg, #00ffbd, #0076ff);
+  background-size: 400% 400%;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 100px;
+  max-width: 130px;
+  min-height: 30px;
+  -webkit-transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+  transition: all cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.about .my-projects-link:hover {
+  -webkit-box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 1px 6px 0px rgba(34, 60, 80, 0.2);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+.about .my-projects-link a {
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+}
+
+.about .separator {
   margin-top: 40px;
-  border-bottom: 2px solid #0d78fc;
-  opacity: 0.7;
+  min-height: 3px;
+  opacity: 1;
+  border-radius: 10px;
+  background: linear-gradient(222deg, #00ffbd, #0076ff);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+.about .about-body {
+  margin-top: 30px;
+  max-width: 600px;
+  opacity: 0.8;
+}
+
+.contacts-wrapper {
+  padding-top: 30px;
+  height: 100vh;
+  background: linear-gradient(222deg, #00ffbd, #0076ff);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.contacts {
+  background-color: #fff;
+  width: 30%;
+  border-radius: 10px;
+  padding-left: 40px;
+  padding-bottom: 30px;
 }
 
 .contacts .contacts-main {
   width: 300px;
+}
+
+.contacts .contacts-main .contacts-main-git-icon::before {
+  font-family: FontAwesome;
+  content: "\f09b";
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contacts .contacts-main .contacts-main-telegram-icon::before {
+  font-family: FontAwesome;
+  content: "\f2c6";
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contacts .contacts-main .contacts-main-mail-icon::before {
+  font-family: FontAwesome;
+  content: "\f0e0";
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.contacts .contacts-main .contacts-main-vk-icon::before {
+  font-family: FontAwesome;
+  content: "\f189";
+  margin-right: 10px;
+  text-decoration: none;
 }
 
 .contacts .contacts-icon i {
@@ -54,7 +174,7 @@ header nav .navbar-brand img:hover {
 }
 
 .contacts a {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0d78fc;
 }
 
@@ -97,5 +217,42 @@ header nav .navbar-brand img:hover {
 
 .projects .card-body .card-text {
   margin-bottom: 18px;
+}
+
+.dark-penkin {
+  height: 100vh;
+  background: #2c2c2c;
+  padding-top: 40px;
+}
+
+.dark-penkin h1 {
+  color: white;
+  margin-top: 0;
+}
+
+.header-night {
+  min-height: 63px;
+  background: #2c2c2c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container-night {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
