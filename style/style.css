@@ -197,6 +197,10 @@ header nav .navbar-brand img:hover {
   text-decoration: underline;
 }
 
+.projects .card {
+  min-height: 505px;
+}
+
 .projects .card:hover {
   -webkit-transform: scale(1.005);
           transform: scale(1.005);
