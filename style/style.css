@@ -123,10 +123,16 @@ header nav .navbar-brand img:hover {
 
 .contacts {
   background-color: #fff;
-  width: 30%;
+  width: 40%;
   border-radius: 10px;
   padding-left: 40px;
   padding-bottom: 30px;
+}
+
+@media (max-width: 780px) {
+  .contacts {
+    width: 100%;
+  }
 }
 
 .contacts .contacts-main {

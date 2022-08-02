@@ -145,7 +145,10 @@ header {
 
 .contacts {
   background-color: #fff;
-  width: 30%;
+  width: 40%;
+  @media (max-width: 780px) {
+    width: 100%;
+  }
   border-radius: 10px;
   padding-left: 40px;
   padding-bottom: 30px;
